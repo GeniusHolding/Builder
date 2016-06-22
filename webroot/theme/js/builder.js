@@ -89,11 +89,6 @@ $(document).ready(function() {
         });
     }
 
-
-    /*
-     End Drag and display code on prism
-     */
-
 });
 
 //Trigger event click
@@ -118,6 +113,7 @@ $(document).on("click", ".addMod", function () {
     var target      = $(this).attr('cible');
     addBloc(recipient,moduleType, target);
 });
+
 
 function addBloc(recipient, moduleType, target){
     $('#'+target).html('<div id="'+ recipient +'"><div class="main-box-mod"><header class="main-box-header clearfix"><h2 class="pull-left">'+ moduleType +'</h2><div class="icon-box pull-right"><a class="btn btn-primary btn-xs pull-left" data-toggle="modal" href="#myModal'+ moduleType +'" ><i class="fa fa-cog"></i></a><a class="btn pull-left" id="removeMod"><i class="fa fa-times"></i></a></div></header></div></div>');
