@@ -466,14 +466,14 @@
                         <br>
                         <h2>Choix des colonnes</h2>
                         <br>
-                        <div class="row addCol" id="b4" data-type="12" data-col="1" data-id="c">
-                            <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <div class="row addCol" id="b4" data-choice="b4" data-nombre-colonne="1">
+                            <div class="col-lg-12 col-sm-12 col-xs-12" data-size="1">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">4/4</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="row addCol" id="b1-1-1-1" data-type="3" data-col="4" data-id="c">
+                        <div class="row addCol" id="b1-1-1-1" data-choice="b1-1-1-1" data-nombre-colonne="4">
                             <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
@@ -495,7 +495,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row addCol" id="b2-2"  data-type="6" data-col="2" data-id="c">
+                        <div class="row addCol" id="b2-2" data-choice="b2-2" data-nombre-colonne="2">
                             <div class="col-lg-6 col-sm-6 col-xs-12">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">2/4</span>
@@ -507,7 +507,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row addCol" id="b1-3" data-type="6" data-col="2" data-id="c">
+                        <div class="row addCol" id="b1-3" data-choice="b1-3" data-nombre-colonne="2">
                             <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
@@ -519,7 +519,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row addCol" id="b3-1">
+                        <div class="row addCol" id="b3-1" data-choice="b3-1" data-nombre-colonne="2">
                             <div class="col-lg-9 col-sm-6 col-xs-12">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">3/4</span>
@@ -531,7 +531,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row addCol" id="b1-2-1">
+                        <div class="row addCol" id="b1-2-1" data-choice="b1-2-1" data-nombre-colonne="3">
                             <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
@@ -548,7 +548,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row addCol" id="b1-1-1">
+                        <div class="row addCol" id="b1-1-1" data-choice="b1-1-1" data-nombre-colonne="3">
                             <div class="col-lg-4 col-sm-6 col-xs-12">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/3</span>
@@ -566,7 +566,7 @@
                             </div>
 
                         </div>
-                        <div class="row addCol" id="b1-1-2">
+                        <div class="row addCol" id="b1-1-2" data-choice="b1-1-2" data-nombre-colonne="3">
                             <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
@@ -583,7 +583,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row addCol" id="b2-1-1">
+                        <div class="row addCol" id="b2-1-1" data-choice="b2-1-1" data-nombre-colonne="3">
                             <div class="col-lg-6 col-sm-6 col-xs-12">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">2/4</span>
@@ -611,183 +611,8 @@
 
 <div class="hideme" style="display: none;">
 
-<!-- colonne 4/4 -->
-<div id="col-b4" class="col" data-choice="b4" data-nombre-colonne="1">
-    <!-- colonne 4/4 -->
-    <div class="row">
-        <div class="col-lg-12">
-            <div id="bloc-b4" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a class="btn btn-primary btn-xs add"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- colonne 1/4 1/4 1/4 1/4 -->
-<div id="col-b1-1-1-1"  class="col" data-choice="b1-1-1-1" data-nombre-colonne="4">
-    <!-- colonne 1/4 1/4 1/4 1/4 -->
-    <div class="row">
-        <div class="col-lg-3">
-            <div id="bloc-b1-1-1-1_1" data-id="bloc-b1-1-1-1_1" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a class="btn btn-primary btn-xs add"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div id="bloc-b1-1-1-1_2" data-id="bloc-b1-1-1-1_2" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a class="btn btn-primary btn-xs add"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div id="bloc-b1-1-1-1_3" data-id="bloc-b1-1-1-1_3" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a class="btn btn-primary btn-xs add"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <div id="bloc-b1-1-1-1_4" data-id="bloc-b1-1-1-1_4" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a class="btn btn-primary btn-xs add"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- colonne 2/4 2/4 -->
-<div id="col-b2-2"  class="col" data-choice="b2-2" data-nombre-colonne="2">
-    <!-- colonne 2/4 2/4 -->
-    <div class="row">
-        <div class="col-lg-6 col-sm-6 col-xs-12">
-            <div id="bloc-b2-2_1" data-id="bloc-b2-2_1" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a class="btn btn-primary btn-xs add"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-6 col-sm-6 col-xs-12">
-            <div id="bloc-b2-2_2" data-id="bloc-b2-2_2" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a class="btn btn-primary btn-xs add"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- colonne 1/4 3/4 -->
-<div id="col-b1-3" class="col" data-choice="b1-3" data-nombre-colonne="2">
-    <!-- colonne 1/4 3/4 -->
-    <div class="row">
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <div id="bloc-b1-3_1" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b1-3" data-choice="b1-3" data-nombre-colonne="1"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-9 col-sm-6 col-xs-12">
-            <div id="bloc-b1-3_2" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b1-3" data-choice="b1-3" data-nombre-colonne="2"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- colonne 3/4 1/4 -->
-<div id="col-b3-1" class="col" data-choice="b3-1" data-nombre-colonne="2">
-    <!-- colonne 3/4 1/4 -->
-    <div class="row">
-        <div class="col-lg-9 col-sm-6 col-xs-12">
-            <div id="bloc-b3-1_1" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b3-1" data-choice="b3-1" data-nombre-colonne="1"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <div id="bloc-b3-1_2" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b3-1" data-choice="b3-1" data-nombre-colonne="2"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- colonne 1/4 2/4 1/4 -->
-<div id="col-b1-2-1" class="col" data-choice="b1-2-1" data-nombre-colonne="3">
-    <!-- colonne 1/4 2/4 1/4 -->
-    <div class="row">
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <div id="bloc-b1-2-1_1" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b1-2-1" data-choice="b1-2-1" data-nombre-colonne="1"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-6 col-sm-6 col-xs-12">
-            <div id="bloc-b1-2-1_2" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b1-2-1" data-choice="b1-2-1" data-nombre-colonne="2"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <div id="bloc-b1-2-1_3" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b1-2-1" data-choice="b1-2-1" data-nombre-colonne="3"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- colonne 1/3 1/3 1/3 -->
-<div id="col-b1-1-1" class="col" data-choice="b1-1-1" data-nombre-colonne="3">
-    <!-- colonne 1/3 1/3 1/3 -->
-    <div class="row">
-        <div class="col-lg-4 col-sm-6 col-xs-12">
-            <div id="bloc-b1-1-1_1" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b1-1-1" data-choice="b1-1-1" data-nombre-colonne="1"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-xs-12">
-            <div id="bloc-b1-1-1_2" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b1-1-1" data-choice="b1-1-1" data-nombre-colonne="2"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-xs-12">
-            <div id="bloc-b1-1-1_3" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b1-1-1" data-choice="b1-1-1" data-nombre-colonne="3"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- colonne 1/4 1/4 2/4 -->
-<div id="col-b1-1-2" class="col" data-choice="b1-1-2" data-nombre-colonne="3">
-    <!-- colonne 1/4 1/4 2/4 -->
-    <div class="row">
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <div id="bloc-b1-1-2_1" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b1-1-2" data-choice="b1-1-2" data-nombre-colonne="1"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <div id="bloc-b1-1-2_2" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b1-1-2" data-choice="b1-1-2" data-nombre-colonne="2"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-6 col-sm-6 col-xs-12">
-            <div id="bloc-b1-1-2_3" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b1-1-2" data-choice="b1-1-2" data-nombre-colonne="3"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- colonne 2/4 1/4 1/4 -->
-<div id="col-b2-1-1" class="col" data-choice="b2-1-1" data-nombre-colonne="3">
-    <!-- colonne 2/4 1/4 1/4 -->
-    <div class="row">
-        <div class="col-lg-6 col-sm-6 col-xs-12">
-            <div id="bloc-b2-1-1_1" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-x add add-b2-1-1" data-choice="b2-1-1" data-nombre-colonne="1"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <div id="bloc-b2-1-1_2" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b2-1-1" data-choice="b2-1-1" data-nombre-colonne="2"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <div id="bloc-b2-1-1_3" class="main-box preview_height_bloc profile-message-btn center-block text-center">
-                <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-xs add add-b2-1-1" data-choice="b2-1-1" data-nombre-colonne="3"> <i class="fa fa-plus"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 
