@@ -48,28 +48,40 @@ $(document).ready(function() {
                     Prism.highlightElement( $('#renderCode')[0] );
                     //end highlight
 
-                    alert($(this).attr('id'));
-                    alert($(this).data('nombre-colonne'));
-
                     choice          = $(this).attr('data-choice');
                     nombre_colonne  = $(this).attr('data-nombre-colonne');
-
-                    for (var i=1 ; i <= nombre_colonne; i++){
-
+                    var size = 0;
+                    $(this).find("div.colomn").each(function(i){
+                        alert($(this).attr('data-size'));
+                        size = $(this).attr('data-size');
                         blocks = blocks +
-                        '<div class="col-lg-'+12/nombre_colonne+'">' +
+                            '<div class="col-lg-'+size+'">' +
                             '<div id="bloc-'+ choice +'_'+i+'_'+count+'" class="main-box"  data-id="bloc-'+ choice +'_'+i+'_'+count+'" >' +
                             '<a class="btn btn-primary btn-xs add"> ' +
                             '<i class="fa fa-plus"></i>' +
                             '</a>' +
                             '</div>' +
                             '</div>';
+
+                        //codes = codes + '';
+
                         count = count + 1;
+                    });
+
+
+                    for (var i=1 ; i <= nombre_colonne; i++){
+
+
                     }
                     initBlock       = '<div class="row">'+ blocks +'</div>';
                     firstBlock      = '<div class="'+$(this).attr('id')+'">'+ initBlock +'</div>';
                     alert(firstBlock);
                     $('.previewPlace').append(firstBlock);
+
+
+
+
+
                 }
             }
         });
@@ -78,17 +90,6 @@ $(document).ready(function() {
 });
 
 function generateBloc(col, id, target){
-
-
-
-    $('#'+target .row).each(function( index ) {
-        //console.log( index + ": " + $( this ).text() );
-        blocks = '<div class="col-lg-'+ 12/col +'">  <div id="module">module here</div>  </div>';
-    });
-
-    $('#'+target).html('<div class="row">  <div class="col-lg-'+ 12/col +'">  <div id="module">module here</div>  </div>  </div>');
-
-
 
 }
 

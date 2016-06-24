@@ -467,99 +467,99 @@
                         <h2>Choix des colonnes</h2>
                         <br>
                         <div class="row addCol" id="b4" data-choice="b4" data-nombre-colonne="1">
-                            <div class="col-lg-12 col-sm-12 col-xs-12" data-size="1">
+                            <div class="col-lg-12 colomn" data-size="12">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">4/4</span>
                                 </div>
                             </div>
                         </div>
                         <div class="row addCol" id="b1-1-1-1" data-choice="b1-1-1-1" data-nombre-colonne="4">
-                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 colomn" data-size="3">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 colomn" data-size="3">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 colomn" data-size="3">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 colomn" data-size="3">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
                                 </div>
                             </div>
                         </div>
                         <div class="row addCol" id="b2-2" data-choice="b2-2" data-nombre-colonne="2">
-                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-6 colomn"  data-size="6">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">2/4</span>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-6 colomn" data-size="6">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">2/4</span>
                                 </div>
                             </div>
                         </div>
                         <div class="row addCol" id="b1-3" data-choice="b1-3" data-nombre-colonne="2">
-                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 colomn" data-size="3">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
                                 </div>
                             </div>
-                            <div class="col-lg-9 col-sm-6 col-xs-12">
+                            <div class="col-lg-9 colomn" data-size="9">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">3/4</span>
                                 </div>
                             </div>
                         </div>
                         <div class="row addCol" id="b3-1" data-choice="b3-1" data-nombre-colonne="2">
-                            <div class="col-lg-9 col-sm-6 col-xs-12">
+                            <div class="col-lg-9 colomn" data-size="9">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">3/4</span>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 colomn" data-size="3">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
                                 </div>
                             </div>
                         </div>
                         <div class="row addCol" id="b1-2-1" data-choice="b1-2-1" data-nombre-colonne="3">
-                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 colomn" data-size="3">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-6 colomn" data-size="6">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">2/4</span>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 colomn" data-size="3">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
                                 </div>
                             </div>
                         </div>
                         <div class="row addCol" id="b1-1-1" data-choice="b1-1-1" data-nombre-colonne="3">
-                            <div class="col-lg-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-4 colomn" data-size="4">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/3</span>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-4 colomn" data-size="4">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/3</span>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-4 colomn" data-size="4">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/3</span>
                                 </div>
@@ -567,34 +567,34 @@
 
                         </div>
                         <div class="row addCol" id="b1-1-2" data-choice="b1-1-2" data-nombre-colonne="3">
-                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 colomn" data-size="3">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 colomn" data-size="3">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-6 colomn" data-size="6">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">2/4</span>
                                 </div>
                             </div>
                         </div>
                         <div class="row addCol" id="b2-1-1" data-choice="b2-1-1" data-nombre-colonne="3">
-                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-6 colomn" data-size="6">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">2/4</span>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 colomn" data-size="3">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 colomn" data-size="3">
                                 <div class="main-box infographic-box colored blue-bg builder_height_bloc">
                                     <span class="headline">1/4</span>
                                 </div>
