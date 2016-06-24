@@ -41,7 +41,6 @@ $(document).ready(function() {
                     var size = 0;
 
                     $(this).find("div.colomn").each(function(i){
-                        //alert($(this).attr('data-size'));
                         size = $(this).attr('data-size');
                         blocks = blocks +
                             '<div class="col-lg-'+size+'">' +
@@ -64,7 +63,6 @@ $(document).ready(function() {
 
                     initCleanBlocks  = '<div class="row">'+ cleanBlocks +'</div>';
 
-                    //alert(firstBlock);
                     $('.previewPlace').append(firstBlock);
 
 
@@ -93,7 +91,6 @@ function showModal(id, ci){
     myCibleId   = ci;
     $('#'+myBlocId+' '+'#'+myCibleId).css( "background-color", "beige" );
     $('.addMod').attr('cible', myCibleId);
-    //alert(myCibleId);
     $('#myModal').modal();
 }
 
@@ -102,7 +99,6 @@ $(document).on("click", ".addMod", function () {
     var recipient   = $(this).data('type');
     var moduleType  = $(this).data('title');
     var target      = $(this).attr('cible');
-    //alert(target);
     addBloc(recipient,moduleType, target);
 });
 
