@@ -1,13 +1,10 @@
 $(document).ready(function() {
     //Init
     var drag_element_id = '';
-
     var count = 1;
-
     $('.addCol').mouseenter(function(){
         dragBloc($(this).attr('id'),$(this).attr('data-position'));
     });
-
     //Detect drop action and drop it in bloc container
     $('#blocs-container').droppable({
         over: function(event, ui) {
@@ -17,18 +14,15 @@ $(document).ready(function() {
             drag_element_id = '';
         }
     });
-
     //Main function for drag action
     function dragBloc(id, p){
-
         //Init Some blank Variables
         var choice = '';
         var nombre_colonne = '';
-        var cible ='';
         var blocks = '';
+        var cleanBlocks = '';
         var initBlock = '';
         var firstBlock = '';
-
         //begin the drag evenet using the #id of the block
         $('#'+id).draggable({
             start: function(event, ui) {
@@ -38,21 +32,16 @@ $(document).ready(function() {
             revert: true,
             revertDuration: 1,
             cursor: "move",
-
             stop: function(event, ui) {
                 $(event.target).css({'opacity': '1'});
                 if(drag_element_id != ''){
 
-                    //Highlight the code generated
-                    $('#renderCode').text( ( $('#renderCode').text() ) + $('#add-code-'+id).html() );
-                    Prism.highlightElement( $('#renderCode')[0] );
-                    //end highlight
-
                     choice          = $(this).attr('data-choice');
                     nombre_colonne  = $(this).attr('data-nombre-colonne');
                     var size = 0;
+
                     $(this).find("div.colomn").each(function(i){
-                        alert($(this).attr('data-size'));
+                        //alert($(this).attr('data-size'));
                         size = $(this).attr('data-size');
                         blocks = blocks +
                             '<div class="col-lg-'+size+'">' +
@@ -63,42 +52,39 @@ $(document).ready(function() {
                             '</div>' +
                             '</div>';
 
-                        //codes = codes + '';
+
+                        cleanBlocks = cleanBlocks +
+                            '<div class="col-lg-'+size+'" id="module">' +
+                            '</div>';
 
                         count = count + 1;
                     });
-
-
-                    for (var i=1 ; i <= nombre_colonne; i++){
-
-
-                    }
                     initBlock       = '<div class="row">'+ blocks +'</div>';
                     firstBlock      = '<div class="'+$(this).attr('id')+'">'+ initBlock +'</div>';
-                    alert(firstBlock);
+
+                    initCleanBlocks  = '<div class="row">'+ cleanBlocks +'</div>';
+
+                    //alert(firstBlock);
                     $('.previewPlace').append(firstBlock);
 
 
-
-
+                    //Highlight the code generated
+                    $('#renderCode').text( ( $('#renderCode').text() ) + initCleanBlocks );
+                    Prism.highlightElement( $('#renderCode')[0] );
+                    //end highlight
 
                 }
             }
         });
     }
-
 });
 
-function generateBloc(col, id, target){
-
-}
 
 //Trigger event click
 $(document).on("click", ".add", function () {
     var myBlocId    = $(this).parents('.col').attr('id');
     var myCibleId   = $(this).parent().data('id');
     $(this).parent().attr('id', myCibleId);
-
     showModal(myBlocId, myCibleId);
 });
 
@@ -107,7 +93,7 @@ function showModal(id, ci){
     myCibleId   = ci;
     $('#'+myBlocId+' '+'#'+myCibleId).css( "background-color", "beige" );
     $('.addMod').attr('cible', myCibleId);
-    alert(myCibleId);
+    //alert(myCibleId);
     $('#myModal').modal();
 }
 
@@ -116,12 +102,9 @@ $(document).on("click", ".addMod", function () {
     var recipient   = $(this).data('type');
     var moduleType  = $(this).data('title');
     var target      = $(this).attr('cible');
-
-    alert(target);
-
+    //alert(target);
     addBloc(recipient,moduleType, target);
 });
-
 
 function addBloc(recipient, moduleType, target){
     $('#'+target).html('<div id="'+ recipient +'"><div class="main-box-mod"><header class="main-box-header clearfix"><h2 class="pull-left">'+ moduleType +'</h2><div class="icon-box pull-right"><a class="btn btn-primary btn-xs pull-left" data-toggle="modal" href="#myModal'+ moduleType +'" ><i class="fa fa-cog"></i></a><a class="btn pull-left" id="removeMod"><i class="fa fa-times"></i></a></div></header></div></div>');

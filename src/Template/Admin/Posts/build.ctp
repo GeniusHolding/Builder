@@ -370,18 +370,14 @@
                         <label for="exampleInputEmail1">Titre</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Titre">
                     </div>
-
                     <div class="form-group">
                         <label for="exampleInputEmail1">Contenu</label>
                         <textarea class="form-control ckeditor" id="exampleTextarea" rows="3"></textarea>
                     </div>
-
                     <div class="form-group">
                         <label for="exampleInputEmail1">Image</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Lien lors de clique sur l'image">
                     </div>
-
-
                 </form>
             </div>
             <div class="modal-footer">
@@ -401,7 +397,6 @@
     <div class="col-lg-6">
         <div class="row">
             <div class="col-lg-12">
-
                 <div class="main-box show-grid clearfix"  style="
                       font-family: 'Open Sans', sans-serif;
                       color: #777777;
@@ -410,19 +405,16 @@
                       background-attachment: fixed;
                       line-height: 18px;
                       -webkit-font-smoothing: antialiased;">
-                    <div class="main-box-body clearfix">
+                    <div class="main-box-body clearfix" id="blocs-container" >
                         <br><br>
                         <div class="previewBloc">
                             <h1><i class="fa fa-cubes"></i> Preview</h1>
                             <p>Drag Something</p>
-
-                            <div class="previewPlace" id="blocs-container" style="min-height: 100px;padding: 10px;">
-
+                            <div class="previewPlace" style="min-height: 100px;padding: 10px;">
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="main-box show-grid clearfix"  style="
                   font-family: 'Open Sans', sans-serif;
                   color: #777777;
@@ -436,27 +428,16 @@
                         <div class="renderBloc">
                             <h1><i class="fa fa-code"></i> Render</h1>
                             <p>Code generate</p>
-
-
 <pre class="language-markup">
 <code id="renderCode" class="language-markup">
 
 </code>
 </pre>
-
-
-
                         </div>
-
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
-
     </div>
     <div class="col-lg-6">
         <div class="row">
@@ -602,206 +583,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </div>
 
-
-<div class="hideme" style="display: none;">
-
-
-
-
-
-
-
-
-
-
-<!--Add Preview code-->
-
-    <!-- colonne 4/4 -->
-    <div id="add-code-b4">
-        <!-- colonne 4/4 -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 1/4 1/4 1/4 1/4 -->
-    <div id="add-code-b1-1-1-1">
-        <!-- colonne 1/4 1/4 1/4 1/4 -->
-        <div class="row">
-            <div class="col-lg-3">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 2/4 2/4 -->
-    <div id="add-code-b2-2">
-        <!-- colonne 2/4 2/4 -->
-        <div class="row">
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 1/4 3/4 -->
-    <div id="add-code-b1-3">
-        <!-- colonne 1/4 3/4 -->
-        <div class="row">
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-9 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 3/4 1/4 -->
-    <div id="add-code-b3-1">
-        <!-- colonne 3/4 1/4 -->
-        <div class="row">
-            <div class="col-lg-9 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 1/4 2/4 1/4 -->
-    <div id="add-code-b1-2-1">
-        <!-- colonne 1/4 2/4 1/4 -->
-        <div class="row">
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 1/3 1/3 1/3 -->
-    <div id="add-code-b1-1-1">
-        <!-- colonne 1/3 1/3 1/3 -->
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 1/4 1/4 2/4 -->
-    <div id="add-code-b1-1-2">
-        <!-- colonne 1/4 1/4 2/4 -->
-        <div class="row">
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 2/4 1/4 1/4 -->
-    <div id="add-code-b2-1-1">
-        <!-- colonne 2/4 1/4 1/4 -->
-        <div class="row">
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                < <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-</div>
