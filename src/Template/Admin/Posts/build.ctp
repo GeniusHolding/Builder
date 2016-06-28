@@ -1,10 +1,19 @@
 
 <style type="text/css">
 
-    .builder_height_bloc{
+    .addCol .blocks{
+        cursor: pointer;
         height: 50px;
-        opacity: 0.5;
+        z-index: 1;
     }
+
+    .blue-bg {
+        background-color: #7FC8BA!important;
+        color: #FFF;
+        height: 50px;
+        padding: 21px;
+    }
+
     .preview_height_bloc{
         height: 80px;
         /*padding-top: 23px;*/
@@ -18,9 +27,6 @@
     .builder_height_module .value{
         margin-top: 5px;
         font-size: 10px;
-    }
-    .infographic-box {
-        padding: 21px;
     }
 
     .main-box-mod{
@@ -36,8 +42,193 @@
     .modalMod .main-box .main-box-header {
         padding: 10px 10px;
     }
+    .ui-draggable-helper {
+        border: 1px dotted #000;
+        padding: 6px;
+        background: #fff;
+        font-size: 1.2em;
+    }
 
 </style>
+<!--Display colomn-->
+<div class="modal fade" id="myModalColomn">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Choix des colonnes</h4>
+            </div>
+            <div class="modal-body">
+                <div class="show-grid clearfix">
+                    <div class="clearfix modalMod">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main-box show-grid clearfix">
+                                    <div class="main-box-body clearfix" id="dragElem">
+
+                                        <div class="row addCol" id="b4" data-choice="b4" data-nombre-colonne="1">
+                                            <div class="blocks">
+                                                <div class="col-lg-12 colomn" data-size="12">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">4/4</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row addCol" id="b1-1-1-1" data-choice="b1-1-1-1" data-nombre-colonne="4">
+                                            <div class="blocks">
+                                                <div class="col-lg-3 colomn" data-size="3">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 colomn" data-size="3">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 colomn" data-size="3">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 colomn" data-size="3">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/4</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row addCol" id="b2-2" data-choice="b2-2" data-nombre-colonne="2">
+                                            <div class="blocks">
+                                                <div class="col-lg-6 colomn"  data-size="6">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">2/4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 colomn" data-size="6">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">2/4</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row addCol" id="b1-3" data-choice="b1-3" data-nombre-colonne="2">
+                                            <div class="blocks">
+                                                <div class="col-lg-3 colomn" data-size="3">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-9 colomn" data-size="9">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">3/4</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row addCol" id="b3-1" data-choice="b3-1" data-nombre-colonne="2">
+                                            <div class="blocks">
+                                                <div class="col-lg-9 colomn" data-size="9">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">3/4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 colomn" data-size="3">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/4</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row addCol" id="b1-2-1" data-choice="b1-2-1" data-nombre-colonne="3">
+                                            <div class="blocks">
+                                                <div class="col-lg-3 colomn" data-size="3">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 colomn" data-size="6">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">2/4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 colomn" data-size="3">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/4</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row addCol" id="b1-1-1" data-choice="b1-1-1" data-nombre-colonne="3">
+                                            <div class="blocks">
+                                                <div class="col-lg-4 colomn" data-size="4">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/3</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 colomn" data-size="4">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/3</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 colomn" data-size="4">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/3</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row addCol" id="b1-1-2" data-choice="b1-1-2" data-nombre-colonne="3">
+                                            <div class="blocks">
+                                                <div class="col-lg-3 colomn" data-size="3">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 colomn" data-size="3">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 colomn" data-size="6">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">2/4</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row addCol" id="b2-1-1" data-choice="b2-1-1" data-nombre-colonne="3">
+                                            <div class="blocks">
+                                                <div class="col-lg-6 colomn" data-size="6">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">2/4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 colomn" data-size="3">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/4</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 colomn" data-size="3">
+                                                    <div class="main-box blue-bg ">
+                                                        <span class="headline">1/4</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--Display all Modules-->
 <div class="modal fade" id="myModal" style="display: none;">
@@ -370,18 +561,14 @@
                         <label for="exampleInputEmail1">Titre</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Titre">
                     </div>
-
                     <div class="form-group">
                         <label for="exampleInputEmail1">Contenu</label>
                         <textarea class="form-control ckeditor" id="exampleTextarea" rows="3"></textarea>
                     </div>
-
                     <div class="form-group">
                         <label for="exampleInputEmail1">Image</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Lien lors de clique sur l'image">
                     </div>
-
-
                 </form>
             </div>
             <div class="modal-footer">
@@ -398,10 +585,9 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-12">
         <div class="row">
             <div class="col-lg-12">
-
                 <div class="main-box show-grid clearfix"  style="
                       font-family: 'Open Sans', sans-serif;
                       color: #777777;
@@ -410,19 +596,17 @@
                       background-attachment: fixed;
                       line-height: 18px;
                       -webkit-font-smoothing: antialiased;">
-                    <div class="main-box-body clearfix">
+                    <div class="main-box-body clearfix" id="blocs-container" >
                         <br><br>
                         <div class="previewBloc">
-                            <h1><i class="fa fa-cubes"></i> Preview</h1>
+                            <h1><i class="fa fa-cubes"></i> Preview Blocs</h1>
                             <p>Drag Something</p>
-
-                            <div class="previewPlace" id="blocs-container" style="min-height: 100px;padding: 10px;">
-
+                            <p><a class="btn btn-primary btn-xs addcolomn">let's build </a></p>
+                            <div class="previewPlace" style="min-height: 100px;padding: 10px;">
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="main-box show-grid clearfix"  style="
                   font-family: 'Open Sans', sans-serif;
                   color: #777777;
@@ -434,374 +618,18 @@
                     <div class="main-box-body clearfix">
                         <br><br>
                         <div class="renderBloc">
-                            <h1><i class="fa fa-code"></i> Render</h1>
+                            <h1><i class="fa fa-code"></i> Render Box</h1>
                             <p>Code generate</p>
-
-
 <pre class="language-markup">
 <code id="renderCode" class="language-markup">
 
 </code>
 </pre>
-
-
-
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
-            </div>
-        </div>
-
-    </div>
-    <div class="col-lg-6">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="main-box show-grid clearfix">
-                    <div class="main-box-body clearfix" id="dragElem">
-                        <br>
-                        <h2>Choix des colonnes</h2>
-                        <br>
-                        <div class="row addCol" id="b4" data-choice="b4" data-nombre-colonne="1">
-                            <div class="col-lg-12 colomn" data-size="12">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">4/4</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row addCol" id="b1-1-1-1" data-choice="b1-1-1-1" data-nombre-colonne="4">
-                            <div class="col-lg-3 colomn" data-size="3">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/4</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 colomn" data-size="3">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/4</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 colomn" data-size="3">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/4</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 colomn" data-size="3">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/4</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row addCol" id="b2-2" data-choice="b2-2" data-nombre-colonne="2">
-                            <div class="col-lg-6 colomn"  data-size="6">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">2/4</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 colomn" data-size="6">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">2/4</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row addCol" id="b1-3" data-choice="b1-3" data-nombre-colonne="2">
-                            <div class="col-lg-3 colomn" data-size="3">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/4</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-9 colomn" data-size="9">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">3/4</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row addCol" id="b3-1" data-choice="b3-1" data-nombre-colonne="2">
-                            <div class="col-lg-9 colomn" data-size="9">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">3/4</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 colomn" data-size="3">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/4</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row addCol" id="b1-2-1" data-choice="b1-2-1" data-nombre-colonne="3">
-                            <div class="col-lg-3 colomn" data-size="3">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/4</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 colomn" data-size="6">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">2/4</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 colomn" data-size="3">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/4</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row addCol" id="b1-1-1" data-choice="b1-1-1" data-nombre-colonne="3">
-                            <div class="col-lg-4 colomn" data-size="4">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/3</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 colomn" data-size="4">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/3</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 colomn" data-size="4">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/3</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="row addCol" id="b1-1-2" data-choice="b1-1-2" data-nombre-colonne="3">
-                            <div class="col-lg-3 colomn" data-size="3">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/4</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 colomn" data-size="3">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/4</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 colomn" data-size="6">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">2/4</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row addCol" id="b2-1-1" data-choice="b2-1-1" data-nombre-colonne="3">
-                            <div class="col-lg-6 colomn" data-size="6">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">2/4</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 colomn" data-size="3">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/4</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 colomn" data-size="3">
-                                <div class="main-box infographic-box colored blue-bg builder_height_bloc">
-                                    <span class="headline">1/4</span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-</div>
-
-
-<div class="hideme" style="display: none;">
-
-
-
-
-
-
-
-
-
-
-<!--Add Preview code-->
-
-    <!-- colonne 4/4 -->
-    <div id="add-code-b4">
-        <!-- colonne 4/4 -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 1/4 1/4 1/4 1/4 -->
-    <div id="add-code-b1-1-1-1">
-        <!-- colonne 1/4 1/4 1/4 1/4 -->
-        <div class="row">
-            <div class="col-lg-3">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 2/4 2/4 -->
-    <div id="add-code-b2-2">
-        <!-- colonne 2/4 2/4 -->
-        <div class="row">
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 1/4 3/4 -->
-    <div id="add-code-b1-3">
-        <!-- colonne 1/4 3/4 -->
-        <div class="row">
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-9 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 3/4 1/4 -->
-    <div id="add-code-b3-1">
-        <!-- colonne 3/4 1/4 -->
-        <div class="row">
-            <div class="col-lg-9 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 1/4 2/4 1/4 -->
-    <div id="add-code-b1-2-1">
-        <!-- colonne 1/4 2/4 1/4 -->
-        <div class="row">
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 1/3 1/3 1/3 -->
-    <div id="add-code-b1-1-1">
-        <!-- colonne 1/3 1/3 1/3 -->
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 1/4 1/4 2/4 -->
-    <div id="add-code-b1-1-2">
-        <!-- colonne 1/4 1/4 2/4 -->
-        <div class="row">
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- colonne 2/4 1/4 1/4 -->
-    <div id="add-code-b2-1-1">
-        <!-- colonne 2/4 1/4 1/4 -->
-        <div class="row">
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                < <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div id="module">
-                    module here
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
 
 </div>
